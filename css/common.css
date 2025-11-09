@@ -239,7 +239,7 @@ Responsiveness
   }
   nav label > span {
     display: inline-block;
-    width: 18px;
+    width: 24px;
     height: 2px;
     background: var(--primary-color);
     transform: translateY(1px);
@@ -260,7 +260,7 @@ Responsiveness
     transition: all 0.5s linear;
   }
   #navbar-toggler:checked ~ label::before {
-    transform: translateX(35px);
+    transform: translateX(45px);
     background-color: var(--secondary-color);
   }
   nav label::after {
@@ -309,6 +309,9 @@ Responsiveness
   .navbar-collapsed li {
     margin: 0 0 20px 0;
   }
+  .navbar-collapsed li:first-child {
+    margin: 20px 0 20px 0;
+  }
   .nav-btn {
     padding: 9px 16px;
   }
@@ -318,8 +321,14 @@ Responsiveness
   .small-navbtn {
     margin-right: 12px;
   }
+  nav label > span {
+    width: 18px;
+  }
   nav label::before {
     height: 2.5px;
+  }
+  #navbar-toggler:checked ~ label::before {
+    transform: translateX(35px);
   }
 }
 @media screen and (max-width: 576px) {
